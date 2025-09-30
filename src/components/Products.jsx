@@ -1,4 +1,4 @@
-import IPhone17 from "../assets/images/iphone17.png"
+import IPhone17 from "../assets/images/iPhone17.png"
 import  AirPodPro3 from "../assets/images/airpodspro3.png"
 import WatchSeries11 from "../assets/images/watchseries11.png"
 import WatchSe3 from "../assets/images/watchse3.png"
