@@ -6,11 +6,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-html, body {
-  overscroll-behavior: none;
+body {
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Arial, sans-serif;
+  "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Arial, sans-serif;
 }
 
 .slidercontainer {
@@ -90,6 +89,13 @@ html, body {
   width: 0.5em;
   height: 0.5em;
 }
+/* Desktop: disable overscroll */
+@media (min-width: 1024px) {
+  html,body {
+    overscroll-behavior: none; /* prevent overscroll when sidebar open */
+  }
+}
+
 @media screen and (max-width: 1080px) {
   .sliderarrows {
     padding: 0 0.8%;
@@ -98,6 +104,14 @@ html, body {
     height: 75vh;
   }
 }
+/* Mobile & tablet: allow overscroll */
+@media (max-width: 1023px) {
+  html,body {
+    overscroll-behavior: auto; /* allows slide-to-refresh */
+  }
+}
+
+
 @media screen and (max-width: 850px) {
   .sliderarrows {
     padding: 0 0.5%;

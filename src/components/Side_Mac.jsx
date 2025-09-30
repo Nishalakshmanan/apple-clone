@@ -6,7 +6,7 @@ function Side_Mac({ sidebar2, setSidebar2, setSidebarOpen }) {
   return sidebar2 !== "sidemac" ? (
     ""
   ) : (
-    <div className="bg-[#1D1D1F] w-full min-h-screen flex flex-col justify-start gap-5 text-[#E8E8E0] relative top-0 z-30">
+    <div className="bg-[#1D1D1F] w-full h-full flex flex-col justify-start gap-5 pb-4 text-[#E8E8E0] fixed top-0 left-0 z-40 overflow-y-scroll">
       {/* Header */}
       <div className="flex justify-between items-center pt-4 px-4">
         <IoIosArrowBack className="text-2xl" onClick={() => setSidebar2(null)} />
